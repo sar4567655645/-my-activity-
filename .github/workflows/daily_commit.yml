@@ -6,6 +6,9 @@ on:
     - cron: '30 15 * * *'
   workflow_dispatch: # Manual trigger bhi kar sakte ho
 
+permissions:
+  contents: write
+
 jobs:
   auto-commit:
     runs-on: ubuntu-latest
